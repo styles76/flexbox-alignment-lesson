@@ -4,15 +4,21 @@
     box-sizing: border-box;
 
 }
-.box{
-    width: 200px;
-    height: 200px;
-    border:2px solid red;
+body{
+    background-color: black;
 }
-.flex-container1{
+header{
+    display:flex;
+    justify-content: center;
+    color:white;
+    border:1px solid gray;
+    margin:10px;
+    padding:5px;                                                                             
+}
 
+.flex-container1{
+    
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-evenly;
     color:white;
     background-color: gray;
@@ -22,24 +28,82 @@
 
 }
 
-.flex-container2{
-    display: flex;
-    flex-direction: column;
+.box1{
+  
+    align-content: center;
     text-align: center;
+    width: 200px;
+    height: 200px;
+    rotate:10deg;
+    border:2px solid red;
+    border-radius: 5px;;
+    box-shadow: 2px 3px 3px ;
+}
+
+.outer-flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-evenly;
     align-items: center;
     color:white;
-    background-color: gray;
-    border:5px solid rgb(23, 22, 22);         
+    background-color:black;
+    border:2px solid red;         
     padding:20px;
     margin:25px;
+    gap:10px;
+
+
+}
+
+.flex-container2{
+    display: flex;
+    margin:40px;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+    gap:20px;
 
 
 }
 .box2{
-    
-
+    align-content: center;
+    text-align: center;
     width: 200px;
-    height: 500px;
+    height: 400px;
+    box-shadow: 2px 3px 3px ;
     border:2px solid red;
+    background-color: black;
 
 }
+
+.flex-container3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+    gap:20px;
+}
+
+.box3{
+    align-content: center;
+    text-align: center;
+    width: 200px;
+    height: 400px;
+    box-shadow: 2px 3px 3px ;
+    border:2px solid red;
+    background-color: rgb(48, 19, 77);
+}
+
+footer { 
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    color:white;
+    text-shadow: 2px 3px 3px;
+    background-color: gray;
+    padding:5px;
+   
+}
+
